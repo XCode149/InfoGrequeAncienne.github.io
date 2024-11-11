@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Achille, le grand et valeureux guerrier</title>
+    <link rel="stylesheet" href="Achille.css">
+</head>
+<body>
+
+    <header>
+        <h1>Achille</h1>
+        <p>Héros de la guerre de Troie, connu pour sa force et sa bravoure.</p>
+    </header>
+
+    <main>
+        <!-- Section Biographie -->
+        <section>
+            <h2>Biographie</h2>
+            <p>Achille est le fils de Thétis, une nymphe de la mer, et de Pélée, roi des Myrmidons. Il est célèbre pour son rôle dans la guerre de Troie et sa quasi-invincibilité, à l'exception de son talon, son unique point faible.</p>
+        </section>
+
+        <!-- Section Attributs -->
+        <section>
+            <h2>Attributs</h2>
+            <p>Achille est souvent représenté en armure, avec un bouclier et une lance. Il symbolise la bravoure et l'esprit combatif, et est associé à la rage guerrière.</p>
+        </section>
+
+        <!-- Rage d'Achille -->
+        <section>
+            <h2>Rage d'Achille</h2>
+            <p>Activez la rage d'Achille pour ressentir la fureur de la bataille !</p>
+            <button onclick="activerRage()">Activer la Rage 🔥</button>
+            <p id="message-rage"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="Héros.html">Retour aux grands héros</a></p>
+    </footer>
+
+    <!-- Script JavaScript pour la Rage d'Achille -->
+    <script>
+        function activerRage() {
+            document.body.style.backgroundColor = "darkred";
+            document.body.style.color = "white";
+            document.getElementById("message-rage").textContent = "La rage d'Achille est activée ! ⚔️🔥";
+            document.getElementById("message-rage").style.fontWeight = "bold";
+            document.getElementById("message-rage").style.fontSize = "1.5em";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+/* Réinitialisation des marges et paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style général */
+body {
+    font-family: 'Georgia', serif;  /* Police plus élégante et classique */
+    background-color: #eaf1f4;  /* Un bleu clair pour rappeler la mer */
+    color: #3e4e5e;  /* Gris foncé pour le texte */
+    padding: 40px;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    color: #204f75;  /* Bleu marine pour rappeler la mer et la mythologie grecque */
+    margin-bottom: 15px;
+    font-family: 'Times New Roman', serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header p {
+    font-size: 1.4rem;
+    color: #8b9fa5;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Sections */
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    font-family: 'Georgia', serif;
+    border-bottom: 3px solid #3b6e8a;  /* Bleu clair pour une touche de couleur */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Description d'Ithaque */
+.description, .history, .importance, .geography, .mythological-characters, .anecdotes {
+    background-color: #ffffff;  /* Fond blanc pour la lisibilité */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);  /* Ombre douce pour le relief */
+}
+
+.description p, .history p, .importance p, .geography p, .anecdotes p {
+    font-size: 1.2rem;
+    color: #4a6572;
+    font-family: 'Georgia', serif;
+    line-height: 1.7;
+}
+
+/* Lien avec Ulysse */
+.history p {
+    font-style: italic;
+    margin-top: 20px;
+}
+
+/* Section Géographie */
+.geography {
+    background-color: #f1f8fc;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.geography h2 {
+    color: #1c3b51;
+}
+
+/* Section Mythological Characters */
+.mythological-characters ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.mythological-characters li {
+    font-size: 1.2rem;
+    margin: 12px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.mythological-characters li strong {
+    color: #204f75;
+}
+
+/* Section Anecdotes */
+.anecdotes {
+    background-color: #f8f7f0;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.anecdotes h2 {
+    color: #204f75;
+}
+
+/* Boutons et liens */
+a {
+    color: #204f75;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 1.2rem;
+    color: #204f75;
+}
+
+footer a {
+    color: #204f75;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

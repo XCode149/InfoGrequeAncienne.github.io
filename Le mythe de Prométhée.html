@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Mythe de Prométhée</title>
+    <link rel="stylesheet" href="Le mythe de Prométhée.css">
+</head>
+<body>
+
+    <header>
+        <h1>Le Mythe de Prométhée</h1>
+        <p>Découvrez l'histoire de Prométhée, le Titan qui défia les dieux pour offrir le feu aux hommes !</p>
+    </header>
+
+    <main>
+        <!-- Section Histoire -->
+        <section class="section" id="histoire">
+            <h2>Le Mythe</h2>
+            <p>Prométhée, un Titan, est connu pour avoir défié Zeus en apportant le feu aux humains. Il leur donna également de nombreuses connaissances, mais ce geste héroïque coûta cher : Zeus le condamna à un châtiment éternel. Il fut enchaîné à un rocher où un aigle venait dévorer son foie chaque jour, et il ne guérissait jamais.</p>
+        </section>
+
+        <!-- Section Famille -->
+        <section class="section" id="famille">
+            <h2>La Famille de Prométhée</h2>
+            <ul>
+                <li><strong>Mère :</strong> Thémis (ou Gaia, selon certaines versions)</li>
+                <li><strong>Père :</strong> Japet</li>
+                <li><strong>Frères et Soeurs :</strong> Atlas, Ménétios, et Epiméthée</li>
+                <li><strong>Enfants :</strong> Deucalion (avec Pyrrha)</li>
+            </ul>
+        </section>
+
+        <!-- Section Jeu -->
+        <section class="section" id="jeu">
+            <h2>Jeu : Libère Prométhée</h2>
+            <p>Votre mission est de libérer Prométhée en résolvant un puzzle pour briser ses chaînes. Trouvez la bonne combinaison de symboles pour le libérer du rocher et le sauver de son châtiment.</p>
+
+            <div id="puzzle-container">
+                <div class="symbol" id="symbol-1"></div>
+                <div class="symbol" id="symbol-2"></div>
+                <div class="symbol" id="symbol-3"></div>
+                <div class="symbol" id="symbol-4"></div>
+                <button onclick="checkPuzzle()">Vérifier la solution</button>
+                <p id="puzzle-message"></p>
+            </div>
+        </section>
+
+        <!-- Section interactive -->
+        <section class="section" id="explorer">
+            <h2>Explorez le Mythe</h2>
+            <div class="interactive">
+                <button onclick="alert('Prométhée a volé le feu aux dieux pour les humains.')">Pourquoi Prométhée a-t-il volé le feu ?</button>
+                <button onclick="alert('Zeus condamna Prométhée à un châtiment éternel.')">Pourquoi Zeus a-t-il puni Prométhée ?</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mythologie Grecque</p>
+    </footer>
+
+    <script src="Le mythe de Prométhée.json"></script>
+</body>
+</html>

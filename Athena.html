@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athena - Déesse de la Sagesse et de la Guerre Stratégique</title>
+    <link rel="stylesheet" href="Athena.css">
+</head>
+<body>
+
+    <header>
+        <h1>Athéna</h1>
+        <p>Déesse de la sagesse, de la guerre stratégique et de l'artisanat</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Biographie</h2>
+            <p>Athéna est la fille de Zeus, née de sa tête, d'où elle jaillit, toute armée, après que son père ait avalé sa mère Métis. Elle est l'une des douze Olympiens et l'une des divinités les plus vénérées de la mythologie grecque.</p>
+        </section>
+
+        <section>
+            <h2>Attributs</h2>
+            <p>Athéna est souvent représentée avec une armure, un casque, une lance, et son bouclier, l'Aégis. Elle est aussi symbolisée par le hibou, symbole de sagesse, et l'olivier, symbole de paix et de prospérité.</p>
+        </section>
+
+        <section>
+            <h2>Citations et Textes Anciens</h2>
+            <blockquote>
+                « La sagesse, la stratégie et la guerre sont mes domaines. Je suis née pour défendre l'ordre et la paix. »
+                <cite>- Homère, Iliade</cite>
+            </blockquote>
+        </section>
+
+        <section>
+            <h2>Chronologie des Mythes d'Athéna</h2>
+            <ul>
+                <li><strong>Naissance :</strong> Née de la tête de Zeus, sans mère, après qu'il ait avalé Métis.</li>
+                <li><strong>La guerre de Troie :</strong> Athéna est une grande stratège dans la guerre de Troie et aide les héros grecs comme Ulysse et Achille.</li>
+                <li><strong>Le concours avec Poséidon :</strong> Athéna gagne le concours pour offrir le plus grand cadeau aux Athéniens en faisant pousser l'olivier sur l'Acropole.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Compétences Divines</h2>
+            <p>Athéna est considérée comme la déesse de la sagesse, des arts et de la guerre stratégique. Elle incarne l'intelligence pratique et la capacité de prendre des décisions éclairées dans les situations les plus complexes.</p>
+        </section>
+
+        <section>
+            <h2>Épreuve de Sagesse d'Athéna</h2>
+            <p>Cliquez sur le bouton pour tester votre propre sagesse. Combien de points de sagesse pouvez-vous accumuler ?</p>
+            <button onclick="increaseWisdom()">Cliquez ici pour accumuler des points de sagesse ✨</button>
+            <p id="wisdom-counter">Points de sagesse : 0</p>
+            <p id="wisdom-message"></p>
+        </section>
+
+        <section>
+            <h2>Le Compliment d'Athéna</h2>
+            <p>Cliquez pour recevoir un compliment divin d'Athéna !</p>
+            <button onclick="giveCompliment()">Recevoir un Compliment ✨</button>
+            <p id="compliment-result"></p>
+        </section>
+
+        <section>
+            <h2>Changer la Couleur du Ciel d'Athéna</h2>
+            <p>Cliquez pour changer la couleur du ciel, en l'honneur de la déesse !</p>
+            <button id="change-color" onclick="changeBackgroundColor()">Changer la couleur du ciel ✨</button>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Retour à l'accueil</a></p>
+    </footer>
+
+    <script>
+        // Variables pour le jeu de sagesse
+        let wisdomPoints = 0;
+
+        function increaseWisdom() {
+            wisdomPoints++;
+            document.getElementById("wisdom-counter").textContent = `Points de sagesse : ${wisdomPoints}`;
+
+            if (wisdomPoints >= 10 && wisdomPoints < 20) {
+                document.getElementById("wisdom-message").textContent = "Vous êtes sage, mais vous pouvez faire mieux !";
+            } else if (wisdomPoints >= 20) {
+                document.getElementById("wisdom-message").textContent = "Vous avez atteint un niveau de sagesse divin ! ✨";
+            }
+        }
+
+        // Compliment d'Athéna
+        const compliments = [
+            "Votre sagesse est inégalée, comme celle d'Athéna ! 🦉",
+            "Vous avez l'esprit stratégique d'un dieu ! ⚔️",
+            "Votre intelligence éclaire la voie comme l'Athéna sur l'Olympe ! 💡",
+            "Vous êtes aussi astucieux qu'un stratège de guerre ! 🎯",
+            "Votre esprit est plus clair qu'un ciel sans nuages ! 🌞"
+        ];
+
+        function giveCompliment() {
+            const randomCompliment = compliments[Math.floor(Math.random() * compliments.length)];
+            document.getElementById("compliment-result").textContent = randomCompliment;
+        }
+
+        // Changer la couleur du fond (ciel d'Athéna)
+        function changeBackgroundColor() {
+            const colors = ["#b3cde0", "#f0f4f8", "#c9e4ff", "#d1e7f0", "#a7d1f7"];
+            document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        }
+    </script>
+
+</body>
+</html>

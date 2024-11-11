@@ -1,0 +1,120 @@
+/* Hermès.css */
+
+/* Réinitialisation des marges et paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style général */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f8;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #1e90ff; /* Bleu pour symboliser le ciel et les voyages */
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Sections */
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #4169e1;
+    border-bottom: 2px solid #1e90ff;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Biographie */
+.biography {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Attributs */
+.attributes ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.attributes li {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+/* Interactions */
+.interaction {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #1e90ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4169e1;
+}
+
+.hidden {
+    display: none;
+}
+
+#blessing-message {
+    margin-top: 20px;
+    color: #2e8b57;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Faits intéressants */
+.facts ul {
+    list-style-type: circle;
+    padding-left: 20px;
+}
+
+.facts li {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

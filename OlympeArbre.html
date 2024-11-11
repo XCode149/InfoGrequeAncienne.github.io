@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Arbre Généalogique Grec avec Graphviz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #graph {
+            width: 80%;
+            height: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Message en jaune indiquant que le site est en travaux -->
+    <div class="site-en-travaux">
+        <p>🚧 Site en travaux 🚧<br>Nous travaillons sur des améliorations, merci de votre patience !</p>
+    </div>
+<h1>Arbre Généalogique Grec</h1>
+<div id="graph"></div>
+
+<!-- Inclusion de viz.js via CDN -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/viz.js@2.1.2/viz.js"></script>
+
+<script type="text/javascript">
+    // Définition du graphique en utilisant le format DOT
+    var dotSource = `
+    digraph family_tree {
+        node [shape=rectangle, style=filled, fontname="Arial", fontsize=12, width=0.2, height=0.3];
+
+        // Définir les styles des nœuds
+        Cronos [label="Cronos" fillcolor="#6a9afc"];
+        Rhea [label="Rhéa" fillcolor="#ff9a8d"];
+
+        Hestia [label="Hestia" fillcolor="#6a9afc"];
+        Hades [label="Hadès" fillcolor="#6a9afc"];
+        Demeter [label="Déméter" fillcolor="#6a9afc"];
+        Zeus [label="Zeus" fillcolor="#6a9afc"];
+        Hera [label="Héra" fillcolor="#ff9a8d"];
+        Poseidon [label="Poséidon" fillcolor="#6a9afc"];
+
+        // Enfants de Zeus
+        Athena [label="Athéna" fillcolor="#6a9afc"];
+        Apollon [label="Apollon" fillcolor="#6a9afc"];
+        Artemis [label="Artémis" fillcolor="#6a9afc"];
+        Hermes [label="Hermès" fillcolor="#6a9afc"];
+        Ares [label="Arès" fillcolor="#6a9afc"];
+        Hephaistos [label="Héphaïstos" fillcolor="#6a9afc"];
+        Dionysos [label="Dionysos" fillcolor="#6a9afc"];
+
+        // Définir les liens entre les nœuds (parents -> enfants)
+        Cronos -> {Hestia Hades Demeter Zeus Hera Poseidon};
+        Zeus -> {Athena Apollon Artemis Hermes Ares Hephaistos Dionysos};
+    }
+    `;
+
+    // Utilisation de viz.js pour convertir le DOT en SVG
+    var viz = new Viz();
+    viz.renderSVGElement(dotSource)
+        .then(function(element) {
+            document.getElementById("graph").appendChild(element);
+        })
+        .catch(error => {
+            console.error("Error rendering Graphviz:", error);
+        });
+</script>
+
+</body>
+</html>

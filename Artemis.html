@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Artémis - Déesse de la chasse et de la nature</title>
+    <link rel="stylesheet" href="Artemis.css">
+</head>
+<body>
+
+    <header>
+        <h1>Artémis</h1>
+        <p>Déesse de la chasse, de la nature .</p>
+    </header>
+
+    <main>
+        <!-- Biographie -->
+        <section>
+            <h2>Biographie</h2>
+            <p>Artémis est la fille de Zeus et de Léto, et la jumelle d'Apollon. Elle est la déesse de la chasse, des animaux sauvages, et des forêts. Artémis est également associée à la chasteté et à la protection des jeunes filles. Dans la mythologie grecque, elle est représentée comme une chasseuse infatigable, souvent accompagnée de ses nymphes et de son arc en argent.</p>
+        </section>
+
+        <!-- Attributs -->
+        <section>
+            <h2>Attributs</h2>
+            <ul>
+                <li>Arc en argent</li>
+                <li>Flèches</li>
+                <li>Chien de chasse</li>
+                <li>La Lune (parfois)</li>
+                <li>Cerf et biche</li>
+            </ul>
+        </section>
+
+        <!-- Citations et Textes Anciens -->
+        <section>
+            <h2>Citations et Textes Anciens</h2>
+            <blockquote>
+                "Artémis, déesse de la nature sauvage, fait régner la paix dans les forêts et chasse ceux qui y pénètrent sans respect."
+                <cite>- Hésiode, Théogonie</cite>
+            </blockquote>
+        </section>
+
+        <!-- Interactions -->
+        <section>
+            <h2>Testez votre Compétence en Chasse !</h2>
+            <p>Cliquer sur le bouton pour tirer une flèche et atteindre votre cible !</p>
+            <button id="shoot-arrow" onclick="shootArrow()">Tirer une flèche 🎯</button>
+            <p id="arrow-result"></p>
+        </section>
+
+        <section>
+            <h2>Changez la couleur de votre Forêt !</h2>
+            <p>Cliquez pour changer le fond de la page et créer une ambiance de forêt magique.</p>
+            <button onclick="changeBackgroundColor()">Changer de Couleur 🌲</button>
+        </section>
+
+        <section>
+            <h2>Compliment de la Déesse Artémis</h2>
+            <p>Cliquez pour recevoir un compliment d'Artémis, déesse de la nature !</p>
+            <button onclick="giveCompliment()">Recevoir un Compliment 🌟</button>
+            <p id="compliment-result"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p><a href="index.html">Retour à l'accueil</a></p>
+    </footer>
+
+    <!-- Script JavaScript pour interactions -->
+    <script>
+        const compliments = [
+            "Vous êtes aussi rapide qu'un cerf dans les bois ! 🦌",
+            "Votre connexion avec la nature est admirable ! 🌿",
+            "Comme Artémis, vous êtes maître de la chasse ! 🎯",
+            "Votre esprit est aussi pur que la forêt d'Artémis. 🌳",
+            "Vous êtes une véritable gardienne des animaux sauvages ! 🐾"
+        ];
+
+        function giveCompliment() {
+            const randomCompliment = compliments[Math.floor(Math.random() * compliments.length)];
+            document.getElementById("compliment-result").textContent = randomCompliment;
+        }
+
+        function changeBackgroundColor() {
+            const colors = ["#228b22", "#90ee90", "#006400", "#2e8b57", "#32cd32"];
+            document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        }
+
+        function shootArrow() {
+            const arrowResult = Math.random() > 0.5 ? "Vous avez atteint votre cible ! 🎯" : "La flèche a raté la cible... Essayez encore ! 🎯";
+            document.getElementById("arrow-result").textContent = arrowResult;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Hermès - Le Messager des Dieux</title>
+    <link rel="stylesheet" href="Hermès.css">
+</head>
+<body>
+
+    <!-- En-tête de la page -->
+    <header>
+        <h1>Hermès</h1>
+        <p>Dieu de la communication, des voyages, et messager des dieux</p>
+    </header>
+
+    <!-- Section principale -->
+    <main>
+        <!-- Biographie de Hermès -->
+        <section class="biography">
+            <h2>Biographie</h2>
+            <p>Hermès est le fils de Zeus et de Maïa. Il est le messager des dieux, souvent représenté avec des sandales ailées. Il est également le dieu des voyageurs, des marchands, des voleurs, et guide les âmes vers le monde des morts.</p>
+        </section>
+
+        <!-- Attributs et symboles -->
+        <section class="attributes">
+            <h2>Attributs et Symboles</h2>
+            <ul>
+                <li><strong>Sandales ailées :</strong> Représentant sa vitesse et son rôle de messager.</li>
+                <li><strong>Caducée :</strong> Bâton entouré de deux serpents, symbole de la communication et de la diplomatie.</li>
+                <li><strong>Chapeau ailé :</strong> Marque son pouvoir de voyage et sa capacité de communication.</li>
+            </ul>
+        </section>
+
+        <!-- Interactions avec Hermès -->
+        <section class="interaction">
+            <h2>Interagir avec Hermès</h2>
+            <p>Cliquez ci-dessous pour une bénédiction de voyage !</p>
+            <button onclick="blessing()">Demander la bénédiction de voyage</button>
+            <p id="blessing-message" class="hidden"></p>
+        </section>
+
+        <!-- Faits intéressants -->
+        <section class="facts">
+            <h2>Faits Intéressants</h2>
+            <ul>
+                <li>Hermès est connu pour son intelligence et sa ruse.</li>
+                <li>Il est considéré comme l'inventeur de la lyre, qu'il aurait donnée à Apollon.</li>
+                <li>Il est également un guide pour les âmes des morts, les conduisant vers l'Hadès.</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <p><a href="index.html">Retour à l'accueil</a></p>
+    </footer>
+
+    <!-- Script pour l'interaction -->
+    <script>
+        function blessing() {
+            const message = document.getElementById('blessing-message');
+            message.classList.remove('hidden');
+            message.textContent = "Hermès vous bénit pour un voyage sans obstacles et des chemins sûrs !";
+        }
+    </script>
+
+</body>
+</html>

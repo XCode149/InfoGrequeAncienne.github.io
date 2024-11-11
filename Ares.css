@@ -1,0 +1,133 @@
+/* Style de base */
+body {
+    background-color: #1a1a1a; /* Fond sombre pour l'ambiance guerrière */
+    color: #e63946; /* Texte rouge sombre pour rappeler le sang et la guerre */
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+}
+
+/* Style pour le header */
+header {
+    background: linear-gradient(to right, #3e000c, #6e000f); /* Dégradé sombre pour un effet dramatique */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid #e63946;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    text-shadow: 2px 2px #8b0000; /* Effet de texte en relief */
+}
+
+header p {
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+/* Style pour les sections */
+main section {
+    background-color: #2e2e2e;
+    padding: 20px;
+    margin: 15px;
+    border-left: 5px solid #e63946;
+    border-radius: 5px;
+}
+
+main section h2 {
+    color: #e63946;
+    text-shadow: 1px 1px #8b0000;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+main section p, main section ul {
+    color: #f0f0f0;
+}
+
+/* Listes d'attributs */
+ul {
+    list-style-type: "⚔️ "; /* Icône épée pour les listes, rappel de la guerre */
+    padding-left: 20px;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+/* Citations */
+blockquote {
+    color: #ffffff;
+    font-style: italic;
+    background-color: #3e000c;
+    padding: 10px;
+    border-left: 5px solid #e63946;
+    margin: 15px 0;
+}
+
+blockquote cite {
+    display: block;
+    text-align: right;
+    color: #e63946;
+    font-weight: bold;
+}
+
+/* Style pour les boutons */
+button {
+    background-color: #e63946;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: transform 0.2s;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: #b71c1c;
+    transform: scale(1.1); /* Effet de grossissement au survol */
+}
+
+button:active {
+    transform: scale(0.9); /* Effet de rétrécissement lorsqu'on clique */
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    text-align: center;
+    color: #cccccc;
+    padding: 15px;
+}
+
+footer a {
+    color: #e63946;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Animation d'ambiance (texte de rage d'Arès) */
+#rage-message {
+    font-size: 1.5em;
+    color: #e63946;
+    animation: flicker 1s infinite alternate;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@keyframes flicker {
+    0%, 100% {
+        opacity: 0.8;
+        text-shadow: 0 0 5px #e63946, 0 0 15px #8b0000, 0 0 20px #6e000f;
+    }
+    50% {
+        opacity: 1;
+        text-shadow: 0 0 10px #b71c1c, 0 0 20px #8b0000, 0 0 30px #6e000f;
+    }
+}

@@ -1,0 +1,106 @@
+/* Styles généraux */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f1f0;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #b5651d; /* Couleur dorée pour symboliser la royauté */
+}
+
+header p {
+    font-size: 1.5rem;
+    color: #8b4513;
+}
+
+/* Sections principales */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #8b0000; /* Rouge foncé pour l'autorité */
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f4e1d2;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+}
+
+strong {
+    color: #8b4513;
+}
+
+/* Interaction */
+.interaction {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.interaction button {
+    background-color: #b5651d;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.interaction button:hover {
+    background-color: #8b4513;
+}
+
+/* Légende cachée */
+#legend-text {
+    font-style: italic;
+    color: #555;
+    margin-top: 15px;
+    background-color: #f4e1d2;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #8b4513;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

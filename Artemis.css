@@ -1,0 +1,128 @@
+/* Style global */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Couleur claire, rappelant le ciel et la nature */
+    color: #2f4f4f; /* Couleur sombre pour un contraste élégant */
+    line-height: 1.6;
+}
+
+/* En-tête */
+header {
+    background-color: #228b22; /* Vert forêt symbolisant la nature */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Contenu principal */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Sections */
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #ffffff; /* Fond blanc pour contraster avec le reste de la page */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #228b22;
+    font-size: 2rem;
+    border-bottom: 2px solid #228b22;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Liste d'attributs */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+ul li::before {
+    content: '•';
+    color: #228b22;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Citations */
+blockquote {
+    font-style: italic;
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-left: 5px solid #228b22;
+    margin: 20px 0;
+}
+
+cite {
+    display: block;
+    text-align: right;
+    font-size: 1rem;
+    color: #2f4f4f;
+}
+
+/* Boutons */
+button {
+    background-color: #228b22; /* Vert forêt */
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #006400; /* Vert foncé lors du survol */
+}
+
+/* Footer */
+footer {
+    background-color: #2f4f4f; /* Gris sombre */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Style spécifique pour le changement de fond */
+body.changed-background {
+    background-color: #98fb98; /* Vert clair, symbolisant la forêt */
+}
+

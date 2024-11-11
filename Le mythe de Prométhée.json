@@ -1,0 +1,28 @@
+// Jeu : puzzle pour libérer Prométhée
+let puzzle = ["feu", "Connaissance", "Bravoure", "Liberté"];
+let userAnswer = [];
+
+// Fonction pour vérifier la solution du puzzle
+function checkPuzzle() {
+    let message = document.getElementById('puzzle-message');
+    if (userAnswer.length === 4 && JSON.stringify(userAnswer) === JSON.stringify(puzzle)) {
+        message.textContent = "Bravo ! Vous avez libéré Prométhée !";
+        message.style.color = "green";
+    } else {
+        message.textContent = "Désolé, la solution est incorrecte. Essayez à nouveau.";
+        message.style.color = "red";
+    }
+}
+
+// Ajouter un événement de clic aux symboles
+document.querySelectorAll('.symbol').forEach((symbol, index) => {
+    symbol.addEventListener('click', () => {
+        let symbolName = prompt("Entrez un symbole : bravoure, connaissance, liberté, feu");
+        if (symbolName && puzzle.includes(symbolName)) {
+            userAnswer[index] = symbolName;
+            symbol.style.backgroundColor = "green";
+        } else {
+            alert("Symbole incorrect, réessayez.");
+        }
+    });
+});

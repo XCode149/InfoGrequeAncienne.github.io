@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Aphrodite - Mythologie Grecque</title>
+    <link rel="stylesheet" href="aphrodite.css">
+</head>
+<body>
+
+    <header>
+        <h1>Aphrodite</h1>
+        <p>Déesse de l'amour et de la beauté</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Biographie</h2>
+            <p>Elle est née du sang d'Ouranos tombé dans la mer après que son fils Cronos l'eut découpé à l'aide d'une faucille...</p>
+        </section>
+
+        <section>
+            <h2>Attributs</h2>
+            <p>Elle a pour attributs le miroir, la ceinture, le coquillage et la pomme...</p>
+        </section>
+
+        <section>
+            <h2>Citations et Textes Anciens</h2>
+            <blockquote>
+                « Aphrodite, la déesse de l'amour et de la beauté... »
+                <cite>- Hésiode, Théogonie</cite>
+            </blockquote>
+        </section>
+
+        <section>
+            <h2>Chronologie des Mythes d'Aphrodite</h2>
+            <ul>
+                <li><strong>Naissance :</strong> Naît de l'écume de la mer...</li>
+                <li><strong>Amour avec Arès :</strong> Aventure passionnée avec Arès...</li>
+                <li><strong>Concours de beauté :</strong> Lors de la guerre de Troie...</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Charme d'Aphrodite</h2>
+            <p>Cliquez pour activer le charme d'Aphrodite et atteindre son plein pouvoir !</p>
+            <button onclick="increaseCharm()">Cliquez ici 💖</button>
+            <p id="charm-counter">Puissance : 100</p>
+            <p id="charm-message"></p>
+        </section>
+
+        <section>
+            <h2>Changeur de Couleur Magique d'Aphrodite</h2>
+            <p>Cliquez pour changer la couleur de fond de la page !</p>
+            <button onclick="changeBackgroundColor()">Changer de Couleur ✨</button>
+        </section>
+
+        <section>
+            <h2>Les Compliments d'Aphrodite</h2>
+            <p>Cliquez pour recevoir un compliment d'Aphrodite !</p>
+            <button onclick="giveCompliment()">Recevoir un Compliment sans trop forcer</button>
+            <p id="compliment-result"></p>
+        </section>
+
+        <script>
+        const compliments = [
+            "Vous êtes aussi gracieux que la colombe ! 🕊️",
+            "Votre beauté est digne d'un dieu ! 🌟",
+            "Votre charme est irrésistible ! 💖",
+            "Vous êtes aussi mystérieux que les profondeurs de la mer ! 🌊",
+            "Vous avez un cœur aussi pur que l'or ! 🌹",
+            "Arretez de demander des compliments, vous êtes cons !"
+        ];
+
+        function giveCompliment() {
+            const randomCompliment = compliments[Math.floor(Math.random() * compliments.length)];
+            document.getElementById("compliment-result").textContent = randomCompliment;
+        }
+        </script>
+
+        <script>
+        function changeBackgroundColor() {
+            const colors = ["#ffcccb", "#ffe6e6", "#ffb3c6", "#ff6699", "#ff9999"];
+            document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        }
+        </script>
+
+        <script>
+        let charmPower = 100;
+
+        function increaseCharm() {
+            charmPower++;
+            document.getElementById("charm-counter").textContent = `Puissance : ${charmPower}`;
+
+            if (charmPower >= 1500) {
+                document.getElementById("charm-message").textContent = "Vous avez atteint le charme d'Aphrodite ! 💖✨";
+            }
+        }
+        </script>
+
+    </main>
+
+    <footer>
+        <p><a href="index.html">Retour en arrière</a></p>
+    </footer>
+
+</body>
+</html>

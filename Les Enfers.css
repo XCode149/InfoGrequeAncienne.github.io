@@ -1,0 +1,192 @@
+/* Réinitialisation des marges et paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style général */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1f1f1f;
+    color: #f4f4f9;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #d9534f;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #f4f4f9;
+}
+
+/* Section Histoire */
+#histoire {
+    background-color: #2d2d2d;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+#histoire h2 {
+    font-size: 2rem;
+    color: #d9534f;
+}
+
+#histoire p {
+    font-size: 1.2rem;
+    color: #f4f4f9;
+}
+
+/* Section des Régions */
+#regions {
+    background-color: #2d2d2d;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+#regions h2 {
+    font-size: 2rem;
+    color: #d9534f;
+}
+
+#regions ul {
+    font-size: 1.2rem;
+    color: #f4f4f9;
+}
+
+#regions li {
+    margin-bottom: 10px;
+}
+
+/* Section Jeu */
+#jeu {
+    background-color: #2d2d2d;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+#jeu h2 {
+    font-size: 2rem;
+    color: #d9534f;
+}
+
+#jeu p {
+    font-size: 1.2rem;
+    color: #f4f4f9;
+}
+
+.game-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: #3e3e3e;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.player {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #d9534f;
+    border-radius: 50%;
+}
+
+.obstacle {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 40px;
+    height: 40px;
+    background-color: #d9534f;
+    border-radius: 50%;
+}
+
+button {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c9302c;
+}
+
+#game-message {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #f4f4f9;
+}
+
+/* Section interactive */
+.interactive button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.interactive button:hover {
+    background-color: #c9302c;
+}
+
+/* Contrôles pour mobile */
+.mobile-controls {
+    display: none; /* Par défaut, les contrôles ne sont pas visibles sur desktop */
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+.arrow-btn {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.arrow-btn:hover {
+    background-color: #c9302c;
+}
+
+/* Affichage des contrôles sur mobile */
+@media (max-width: 600px) {
+    .mobile-controls {
+        display: flex;
+    }
+
+    button, .interactive button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    .game-container {
+        height: 200px;
+    }
+}

@@ -1,0 +1,94 @@
+/* Delphes.css */
+
+/* Réinitialiser les marges et padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fond général de la page */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f0f8ff;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #800080; /* Violet, couleur mystique de l'oracle */
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.5rem;
+    color: #8b4513;
+}
+
+/* Sections */
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #8b4513;
+    border-bottom: 2px solid #800080;
+    margin-bottom: 10px;
+}
+
+/* Liens en boutons */
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #800080;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #6a0080;
+}
+
+/* Boutons interactifs */
+button {
+    background-color: #800080;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: #6a0080;
+}
+
+/* Style pour les compléments */
+blockquote {
+    background-color: #f4e1f5;
+    padding: 10px;
+    border-left: 5px solid #800080;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+cite {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    text-align: right;
+    color: #8b4513;
+}

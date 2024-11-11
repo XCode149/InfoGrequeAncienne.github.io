@@ -1,0 +1,161 @@
+/* Réinitialisation des marges et paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style général */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #5a2a83;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+/* Section Histoire */
+#histoire {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+#histoire h2 {
+    font-size: 2rem;
+    color: #5a2a83;
+}
+
+#histoire p {
+    font-size: 1.2rem;
+    color: #444;
+}
+
+/* Section Famille */
+#famille {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+#famille h2 {
+    font-size: 2rem;
+    color: #5a2a83;
+}
+
+#famille ul {
+    list-style-type: none;
+}
+
+#famille li {
+    font-size: 1.2rem;
+    color: #444;
+}
+
+/* Section Jeu */
+#jeu {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+#jeu h2 {
+    font-size: 2rem;
+    color: #5a2a83;
+}
+
+#jeu p {
+    font-size: 1.2rem;
+    color: #444;
+}
+
+#puzzle-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.symbol {
+    width: 50px;
+    height: 50px;
+    background-color: #5a2a83;
+    border-radius: 5px;
+}
+
+button {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #5a2a83;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6f3b9f;
+}
+
+#puzzle-message {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #444;
+}
+
+/* Section interactive */
+.interactive button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #5a2a83;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.interactive button:hover {
+    background-color: #6f3b9f;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    #histoire p, #famille li, #jeu p {
+        font-size: 1rem;
+    }
+
+    #jeu button, .interactive button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    #puzzle-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

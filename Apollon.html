@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Apollon - Dieu de la Lumière et de la Musique</title>
+    <link rel="stylesheet" href="Apollon.css">
+</head>
+<body>
+
+    <header>
+        <h1>Apollon</h1>
+        <p>Dieu de la lumière, de la musique, de la guérison et des prophéties</p>
+    </header>
+
+    <main>
+        <!-- Biographie -->
+        <section>
+            <h2>Biographie</h2>
+            <p>Apollon, fils de Zeus et de Léto, est l'un des douze Olympiens. Il est le dieu de la lumière, de la musique, des arts, de la guérison et des prophéties. Il est souvent représenté avec une lyre et symbolise l'harmonie et la beauté.</p>
+        </section>
+
+        <!-- Attributs -->
+        <section>
+            <h2>Attributs</h2>
+            <p>Les attributs d'Apollon incluent la lyre, symbole de la musique, l'arc, représentant la précision, et le laurier, symbole de victoire. Son animal associé est le dauphin.</p>
+            <ul>
+                <li><strong>Instrument :</strong> Lyre 🎼</li>
+                <li><strong>Animal :</strong> Dauphin 🐬</li>
+                <li><strong>Plante :</strong> Laurier 🌿</li>
+            </ul>
+        </section>
+
+        <!-- Citations et Textes Anciens -->
+        <section>
+            <h2>Citations et Textes Anciens</h2>
+            <blockquote>
+                « Apollon, dieu radieux et bienveillant, apporte la lumière à tous et protège les artistes et les poètes. »
+                <cite>- Homère, Hymne à Apollon</cite>
+            </blockquote>
+        </section>
+
+        <!-- Interaction 1: Melodie de la lyre -->
+        <section>
+            <h2>Jouez la mélodie de la lyre</h2>
+            <p>Cliquez sur les notes pour jouer une mélodie inspirée par Apollon.</p>
+            <button onclick="jouerNote()">Do 🎶</button>
+            <button onclick="jouerNote()">Ré 🎶</button>
+            <button onclick="jouerNote()">Mi 🎶</button>
+            <p id="melodie"></p>
+        </section>
+
+        <!-- Interaction 2: Divination d'Apollon -->
+        <section>
+            <h2>Divination d'Apollon</h2>
+            <p>Demandez une prophétie d'Apollon !</p>
+            <button onclick="donnerProphetie()">Demander une prophétie 🔮</button>
+            <p id="prophetie-resultat"></p>
+        </section>
+
+        <!-- Interaction 3: Bénédiction d'Apollon -->
+        <section>
+            <h2>Bénédiction d'Apollon</h2>
+            <p>Cliquez pour recevoir une bénédiction d'Apollon et augmenter votre énergie divine !</p>
+            <button onclick="recevoirBenediction()">Recevoir une bénédiction ☀️</button>
+            <p id="energie">Énergie divine : 0</p>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Retour à l'accueil</a></p>
+    </footer>
+
+    <!-- JavaScript pour les interactions -->
+    <script>
+        // Interaction: Mélodie de la lyre
+        function jouerNote() {
+            const notes = ["Do 🎶", "Ré 🎶", "Mi 🎶", "Fa 🎶", "Sol 🎶", "La 🎶", "Si 🎶"];
+            const randomNote = notes[Math.floor(Math.random() * notes.length)];
+            document.getElementById("melodie").textContent = "Vous jouez : " + randomNote;
+        }
+
+        // Interaction: Divination d'Apollon
+        const propheties = [
+            "Une grande lumière éclaire votre chemin !",
+            "Prenez soin de votre esprit, il est votre force.",
+            "Un ami apportera bientôt des nouvelles.",
+            "La réussite est proche, gardez foi.",
+            "Un défi viendra, mais la victoire sera vôtre."
+        ];
+
+        function donnerProphetie() {
+            const randomProphetie = propheties[Math.floor(Math.random() * propheties.length)];
+            document.getElementById("prophetie-resultat").textContent = randomProphetie;
+        }
+
+        // Interaction: Bénédiction d'Apollon
+        let energie = 0;
+
+        function recevoirBenediction() {
+            energie += 10;
+            document.getElementById("energie").textContent = "Énergie divine : " + energie;
+
+            if (energie >= 50 && energie < 100) {
+                document.getElementById("energie").textContent += " - Vous commencez à sentir le pouvoir d'Apollon !";
+            } else if (energie >= 100) {
+                document.getElementById("energie").textContent += " - Vous êtes maintenant béni par Apollon ! 🌟";
+            }
+        }
+    </script>
+
+</body>
+</html>

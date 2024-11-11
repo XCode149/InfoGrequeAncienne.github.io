@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dionysos - Dieu du vin et de la fête</title>
+    <link rel="stylesheet" href="Dionysos.css">
+</head>
+<body>
+
+<header>
+    <h1>Dionysos</h1>
+    <p>Dieu du vin, de la fête, et de la folie dans la mythologie grecque.</p>
+</header>
+
+<main>
+    <section>
+        <h2>Biographie</h2>
+        <p>Dionysos est le dieu du vin, de la joie, de la danse et de la folie. Il est le fils de Zeus et de Sémélé, une mortelle. Dionysos incarne l'extase divine et l'irrésistible énergie festive.</p>
+    </section>
+
+    <section>
+        <h2>Attributs</h2>
+        <p>Dionysos est souvent représenté avec une coupe de vin, un thyrse (un bâton orné de lierre), et entouré de son cortège de satyres et de ménades. Son symbole est également la grappe de raisin, signe de la fertilité et de l'abondance.</p>
+    </section>
+
+    <section>
+        <h2>Rituel de Dionysos</h2>
+        <p>Les Dionysies étaient des fêtes en son honneur, marquées par des spectacles théâtraux, des danses et des libations de vin. Ces rituels permettaient d'entrer en contact avec l'esprit de Dionysos, de se libérer des contraintes sociales et de se laisser aller à la folie.</p>
+    </section>
+
+    <section>
+        <h2>Testez votre énergie festive !</h2>
+        <button onclick="startCelebration()">Lancez la fête !</button>
+        <p id="celebration-message"></p>
+    </section>
+
+    <section>
+        <h2>Les Grappes de Raisin Magiques</h2>
+        <p>Voyez les grappes de raisin tomber du ciel ! Cliquez pour en faire apparaître une nouvelle.</p>
+        <button onclick="generateGrape()">Faire tomber une grappe !</button>
+        <div id="grape-container"></div>
+    </section>
+
+</main>
+
+<footer>
+    <p><a href="index.html">Retour à l'accueil</a></p>
+</footer>
+
+<script>
+    // Fonction pour démarrer la célébration
+    function startCelebration() {
+        document.getElementById('celebration-message').textContent = "La fête commence ! Libérez votre énergie ! 🎉🍇";
+    }
+
+    // Fonction pour générer une grappe de raisin
+    function generateGrape() {
+        const grape = document.createElement('div');
+        grape.classList.add('grape');
+        document.getElementById('grape-container').appendChild(grape);
+
+        // Positionner la grappe de manière aléatoire sur l'écran
+        grape.style.top = Math.random() * 80 + '%'; // 80% de la hauteur de la fenêtre
+        grape.style.left = Math.random() * 80 + '%'; // 80% de la largeur de la fenêtre
+    }
+</script>
+
+</body>
+</html>

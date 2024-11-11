@@ -1,0 +1,199 @@
+/* Styles de base pour la mise en page */
+body {
+    background-color: #f5f5f5;
+    background-image: url('path/to/your-marble-background.jpg'); /* Ajoutez une image de fond de marbre */
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Times New Roman', Times, serif; /* Police classique et élégante */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles pour le conteneur principal */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Légère transparence pour laisser voir le fond */
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles de l'en-tête */
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom: 3px solid #d4af37; /* Doré antique */
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3em;
+    color: #333;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.5em;
+    color: #666;
+}
+
+/* Section de contenu */
+section {
+    margin: 40px 0;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    border-left: 4px solid #d4af37;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2em;
+    color: #d4af37; /* Couleur dorée pour les titres */
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Styles pour les boutons */
+button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #d4af37; /* Couleur dorée pour les boutons */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Citations et blocs de texte */
+blockquote {
+    font-style: italic;
+    color: #666;
+    padding: 10px 20px;
+    border-left: 4px solid #d4af37;
+    background: rgba(255, 255, 255, 0.9);
+    margin: 20px 0;
+}
+
+cite {
+    display: block;
+    font-size: 0.9em;
+    color: #999;
+    text-align: right;
+    margin-top: 10px;
+}
+
+/* Liste pour les chronologies */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.2em;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Styles de pied de page */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-top: 3px solid #d4af37;
+    border-radius: 15px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Animation pour rendre les boutons "flottants" */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+button {
+    animation: float 3s ease-in-out infinite;
+}
+/* Styles de base pour les boutons */
+a {
+    display: inline-block; /* Permet de contrôler la largeur et la hauteur comme pour un bouton */
+    padding: 10px 20px; /* Espace intérieur du bouton */
+    margin: 5px; /* Espacement autour du bouton */
+    font-size: 1.2em; /* Taille du texte */
+    color: #fff; /* Couleur du texte */
+    background-color: #d4af37; /* Couleur de fond dorée pour le bouton */
+    text-decoration: none; /* Supprime le soulignement */
+    border-radius: 5px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Ombre pour effet de profondeur */
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.3s;
+}
+
+/* Effets de survol pour le bouton */
+a:hover {
+    background-color: #b68d30; /* Change la couleur de fond lors du survol */
+    transform: scale(1.05); /* Agrandit légèrement le bouton */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Accentue l'ombre */
+}
+
+a:active {
+    transform: scale(0.98); /* Réduit légèrement la taille lorsque le bouton est cliqué */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Réduit l'ombre */
+}
+/* Message en jaune pour indiquer que le site est en travaux */
+.site-en-travaux {
+    background-color: #ffcc00;
+    color: #000;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.site-en-travaux p {
+    margin: 0;
+    padding: 5px;
+}

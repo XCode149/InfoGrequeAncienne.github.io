@@ -1,0 +1,116 @@
+/* Dionysos.css */
+
+/* Réinitialisation des marges et padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fond général */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f2e6ff; /* Violet pâle pour évoquer l’ambiance festive */
+    color: #4b0082;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header */
+header {
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #800080; /* Violet royal */
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.5rem;
+    color: #8b4513;
+}
+
+/* Sections */
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #4b0082;
+    text-decoration: underline;
+}
+
+/* Style des citations */
+blockquote {
+    font-style: italic;
+    color: #9932cc;
+    font-size: 1.2rem;
+}
+
+cite {
+    font-size: 1rem;
+    color: #8b4513;
+}
+
+/* Points d’interaction */
+button {
+    background-color: #800080; /* Violet pour Dionysos */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #9932cc; /* Changement de couleur au survol */
+}
+
+/* Ajout de bordure et ombre pour les sections */
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style de l’animation des grappes de raisin */
+.grape {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #800080;
+    animation: grapeAnimation 3s infinite;
+}
+
+@keyframes grapeAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+footer {
+    margin-top: 40px;
+}
+
+footer a {
+    color: #4b0082;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Héra, Reine des Dieux</title>
+    <link rel="stylesheet" href="Hera.css">
+</head>
+<body>
+
+<header>
+    <h1>Héra</h1>
+    <p>La reine des dieux et déesse du mariage et de la famille.</p>
+</header>
+
+<main>
+    <section class="introduction">
+        <h2>Présentation de Héra</h2>
+        <p>Héra est la déesse du mariage, des femmes, de la famille et de la royauté dans la mythologie grecque. Elle est l'épouse et la sœur de Zeus, et est souvent représentée avec un diadème ou un sceptre.</p>
+    </section>
+
+    <section class="attributes">
+        <h2>Attributs et Symboles</h2>
+        <ul>
+            <li><strong>Paon :</strong> Le paon est un symbole d'Héra, représentant la royauté et la fierté.</li>
+            <li><strong>Grenade :</strong> Symbolise la fertilité et l'abondance.</li>
+            <li><strong>Diadème :</strong> Représente son statut de reine des dieux.</li>
+        </ul>
+    </section>
+
+    <section class="interaction">
+        <h2>Dialogue avec Héra</h2>
+        <p>Voulez-vous en savoir plus sur les légendes autour de Héra ?</p>
+        <button onclick="showLegend()">Écouter une légende</button>
+        <div id="legend-text" style="display: none;">
+            <p><em>« Héra est connue pour sa jalousie envers les nombreuses amantes de Zeus. Elle a souvent cherché à se venger de ces trahisons, ce qui l'a menée à infliger des épreuves difficiles aux héros grecs comme Héraclès. »</em></p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p><a href="index.html">Retour à l'accueil de la mythologie grecque</a></p>
+</footer>
+
+<script>
+function showLegend() {
+    var legendText = document.getElementById("legend-text");
+    legendText.style.display = "block";
+}
+</script>
+
+</body>
+</html>

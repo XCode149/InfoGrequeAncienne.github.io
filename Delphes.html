@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delphes - L'Oracle d'Apollon</title>
+    <link rel="stylesheet" href="Delphes.css">
+</head>
+<body>
+
+    <header>
+        <h1>Le Temple de Delphes</h1>
+        <p>Le sanctuaire sacré d'Apollon et l'oracle le plus célèbre de la Grèce antique</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Histoire du Temple de Delphes</h2>
+            <p>Le temple de Delphes était un centre religieux majeur de la Grèce antique. Situé sur les pentes du Mont Parnasse, il était dédié à Apollon. L'oracle de Delphes était réputé pour ses prophéties, souvent énigmatiques et interprétées par les prêtres et prêtresses de l'endroit.</p>
+        </section>
+
+        <section>
+            <h2>Le rôle de l'Oracle de Delphes</h2>
+            <p>Delphes a été le site où la Pythie, une prêtresse d'Apollon, donnait ses réponses aux questions des visiteurs. Les réponses de l'oracle étaient considérées comme des messages divins, souvent prononcées sous l'influence d'une vapeur mystique qui sortait de la terre.</p>
+        </section>
+
+        <section>
+            <h2>Les Prophéties Célèbres</h2>
+            <ul>
+                <li><strong>Le Destin d'Oedipe :</strong> Oedipe a été prédestiné à tuer son père et épouser sa mère, un destin qu'il a tenté d'éviter sans succès.</li>
+                <li><strong>Le Marathon :</strong> L'oracle a prédit la victoire des Grecs lors de la bataille de Marathon contre les Perses.</li>
+                <li><strong>Le Destin d'Alexandre le Grand :</strong> L'oracle avait prédit qu'Alexandre deviendrait le roi de l'Asie et un des plus grands conquérants de l'histoire.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Recevez votre Oracle</h2>
+            <p>Cliquez pour découvrir une prophétie d'Apollon, mais attention, l'oracle peut être mystérieux !</p>
+            <button onclick="generateOracle()">Recevoir un Oracle</button>
+            <p id="oracle-result"></p>
+        </section>
+
+        <section>
+            <h2>Faites une Question à l'Oracle</h2>
+            <p>Posez une question à l'oracle et attendez sa réponse divine !</p>
+            <input type="text" id="user-question" placeholder="Entrez votre question...">
+            <button onclick="answerQuestion()">Poser la question</button>
+            <p id="question-answer"></p>
+        </section>
+
+        <footer>
+            <p><a href="index.html">Retour à l'accueil</a></p>
+        </footer>
+    </main>
+
+    <script>
+        // Oracle aléatoire
+        const oracles = [
+            "Vous rencontrerez un grand défi, mais la sagesse vous guidera.",
+            "Le futur est incertain, mais vos choix seront déterminants.",
+            "Faites attention aux alliances qui semblent trop belles pour être vraies.",
+            "Une grande aventure vous attend, soyez prêt à prendre des risques.",
+            "La vérité se cache sous une surface tranquille. Ne vous fiez pas aux apparences."
+        ];
+
+        function generateOracle() {
+            const randomOracle = oracles[Math.floor(Math.random() * oracles.length)];
+            document.getElementById("oracle-result").textContent = `"${randomOracle}"`;
+        }
+
+        // Répondre à la question de l'utilisateur
+        function answerQuestion() {
+            const question = document.getElementById("user-question").value;
+            if (question) {
+                const answers = [
+                    "La réponse est dans les étoiles. Soyez patient.",
+                    "Le destin vous guidera, mais vous devrez faire preuve de sagesse.",
+                    "Une grande épreuve se profile, mais la victoire est possible.",
+                    "Le chemin est semé d'embûches, mais vous êtes destiné à surmonter les obstacles."
+                ];
+                const randomAnswer = answers[Math.floor(Math.random() * answers.length)];
+                document.getElementById("question-answer").textContent = `"${randomAnswer}"`;
+            } else {
+                document.getElementById("question-answer").textContent = "Veuillez poser une question à l'oracle.";
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Arès - Dieu de la Guerre</title>
+    <link rel="stylesheet" href="Ares.css">
+</head>
+<body>
+
+    <!-- En-tête -->
+    <header>
+        <h1>Arès</h1>
+        <p>Dieu de la guerre, de la destruction et de la violence</p>
+    </header>
+
+    <!-- Contenu principal -->
+    <main>
+        <!-- Section Biographie -->
+        <section>
+            <h2>Biographie</h2>
+            <p>Arès est l'un des douze Olympiens et est connu comme le dieu de la guerre brute et de la violence. Fils de Zeus et d'Héra, il est redouté pour son tempérament impulsif et son amour du combat.</p>
+        </section>
+
+        <!-- Section Attributs -->
+        <section>
+            <h2>Attributs</h2>
+            <p>Arès est souvent représenté avec une armure, un bouclier, et une lance, symboles de la guerre et de la puissance. Ses animaux emblématiques sont le chien et le vautour.</p>
+            <ul>
+                <li>Arme : Lance</li>
+                <li>Armure : Bouclier et casque</li>
+                <li>Animal : Vautour et chien</li>
+            </ul>
+        </section>
+
+        <!-- Section Rage d'Arès -->
+        <section>
+            <h2>Rage d'Arès</h2>
+            <p>Cliquez pour invoquer la rage d'Arès et montrer sa puissance ! Chaque clic augmente sa rage de 100 points !</p>
+            <button onclick="increaseRage()">Invoquer la Rage ⚔️</button>
+            <p id="rage-counter">Rage : 0</p>
+            <p id="rage-message"></p>
+        </section>
+
+        <!-- Section Citation Guerrière -->
+        <section>
+            <h2>Citation Guerrière</h2>
+            <blockquote>
+                « Le courage est la première des qualités humaines, car elle garantit toutes les autres. » 
+                <cite>- Homère</cite>
+            </blockquote>
+        </section>
+
+        <!-- Section Interactions Aléatoires -->
+        <section>
+            <h2>Déclenchement de Guerre</h2>
+            <p>Appuyez sur le bouton pour une citation aléatoire d’Arès sur la guerre et la destruction !</p>
+            <button onclick="showRandomWarQuote()">Obtenir une Citation 🔥</button>
+            <p id="war-quote"></p>
+        </section>
+
+        <!-- Section Changeur d'Arrière-Plan -->
+        <section>
+            <h2>Changer l'Arrière-Plan</h2>
+            <p>En l'honneur du dieu de la guerre, changez la couleur de fond pour créer une ambiance guerrière !</p>
+            <button onclick="changeBackgroundColor()">Changer la Couleur de Fond 🔥</button>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <p><a href="index.html">Retour à l'accueil</a></p>
+    </footer>
+
+    <!-- Script pour les interactions -->
+    <script>
+        // Rage d'Arès
+        let rage = 0;
+
+        function increaseRage() {
+            rage += 100;
+            document.getElementById("rage-counter").textContent = `Rage : ${rage}`;
+
+            if (rage >= 500 && rage < 1000) {
+                document.getElementById("rage-message").textContent = "Arès est en colère ! Préparez-vous à la guerre !";
+            } else if (rage >= 1000) {
+                document.getElementById("rage-message").textContent = "La rage d'Arès est incontrôlable ! ⚔️";
+            }
+        }
+
+        // Citations aléatoires de guerre
+        const warQuotes = [
+            "La guerre est l'art de détruire.",
+            "Aucun guerrier ne triomphe sans sacrifice.",
+            "La paix est une illusion, la guerre est éternelle.",
+            "La force est mon droit et la victoire, mon dû.",
+            "Le courage est ce qui mène à la gloire, la peur à la défaite."
+        ];
+
+        function showRandomWarQuote() {
+            const randomQuote = warQuotes[Math.floor(Math.random() * warQuotes.length)];
+            document.getElementById("war-quote").textContent = randomQuote;
+        }
+
+        // Changer la couleur de fond
+        function changeBackgroundColor() {
+            const colors = ["#3b3b3b", "#5e0000", "#2a2a2a", "#7a0000", "#4a4a4a"];
+            document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        }
+    </script>
+
+</body>
+</html>

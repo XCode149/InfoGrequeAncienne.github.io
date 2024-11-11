@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Enfers - Mythologie Grecque</title>
+    <link rel="stylesheet" href="Les Enfers.css">
+</head>
+<body>
+
+    <header>
+        <h1>Les Enfers - Le Royaume d'Hadès</h1>
+        <p>Explorez les Enfers, le royaume d'Hadès, où les âmes des morts résident après leur passage sur Terre.</p>
+    </header>
+
+    <main>
+        <!-- Section Histoire des Enfers -->
+        <section class="section" id="histoire">
+            <h2>Les Enfers dans la Mythologie Grecque</h2>
+            <p>Les Enfers, dirigés par Hadès, sont l'endroit où les âmes des défunts vont après leur mort. Ce royaume souterrain est divisé en plusieurs régions, chacune destinée à un type d'âme. Il existe aussi des épreuves pour ceux qui cherchent à en sortir.</p>
+        </section>
+
+        <!-- Section Description des différentes régions des Enfers -->
+        <section class="section" id="regions">
+            <h2>Les Régions des Enfers</h2>
+            <ul>
+                <li><strong>Le Styx :</strong> Le fleuve des Serments. Il sépare le monde des vivants du royaume des morts.</li>
+                <li><strong>Les Champs Élysées :</strong> La région des bienheureux, un lieu de récompense pour les âmes vertueuses.</li>
+                <li><strong>Tartare :</strong> Le plus profond des Enfers, où les âmes des criminels et des géants sont punies.</li>
+                <li><strong>Le Champ des Asphodèles :</strong> La région des âmes ordinaires, ni particulièrement vertueuses, ni particulièrement coupables.</li>
+            </ul>
+        </section>
+
+        <!-- Section Jeu - Évasion des Enfers -->
+        <section class="section" id="jeu">
+            <h2>Jeu : Évasion des Enfers</h2>
+            <p>Aidez une âme à s'échapper des Enfers ! Utilisez les flèches pour éviter les obstacles et atteindre la sortie des Enfers.</p>
+
+            <div class="game-container">
+                <div class="player" id="player"></div>
+                <div class="obstacle" id="obstacle"></div>
+            </div>
+
+            <button onclick="startGame()">Démarrer le jeu</button>
+            <p id="game-message"></p>
+        </section>
+
+        <!-- Section interactive -->
+        <section class="section" id="explorer">
+            <h2>Explorez le Mythe des Enfers</h2>
+            <div class="interactive">
+                <button onclick="alert('Les Enfers sont dirigés par Hadès, frère de Zeus et Poséidon.')">Qui est le dieu des Enfers ?</button>
+                <button onclick="alert('Le fleuve Styx est un passage entre le monde des vivants et celui des morts.')">Que représente le Styx dans la mythologie ?</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mythologie Grecque</p>
+    </footer>
+
+    <!-- Ajout du script JavaScript -->
+    <script src="Les Enfers.js"></script>
+
+    <!-- Contrôles de jeu pour mobile -->
+    <div class="mobile-controls">
+        <button class="arrow-btn" id="left-btn">⬅️</button>
+        <button class="arrow-btn" id="right-btn">➡️</button>
+    </div>
+</body>
+</html>

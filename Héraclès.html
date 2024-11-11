@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Héraclès, le Héros des Douze Travaux</title>
+    <link rel="stylesheet" href="Héraclès.css">
+</head>
+<body>
+
+<header>
+    <h1>Héraclès</h1>
+    <p>Héros de la mythologie grecque, célèbre pour ses Douze Travaux.</p>
+</header>
+
+<main>
+    <section class="introduction">
+        <h2>Présentation de Héraclès</h2>
+        <p>Héraclès, connu pour sa force surhumaine, est l'un des plus grands héros de la mythologie grecque. Fils de Zeus et de la mortelle Alcmène, il est souvent représenté avec une peau de lion et une massue.</p>
+    </section>
+
+    <section class="attributes">
+        <h2>Attributs et Symboles</h2>
+        <ul>
+            <li><strong>Peau de lion :</strong> Héraclès porte la peau du lion de Némée, symbole de son invincibilité.</li>
+            <li><strong>Massue :</strong> Une arme redoutable, représentant sa force.</li>
+            <li><strong>Force et bravoure :</strong> Ses traits les plus emblématiques.</li>
+        </ul>
+    </section>
+
+    <section class="twelve-labors">
+        <h2>Les Douze Travaux d'Héraclès</h2>
+        <button onclick="showLabors()">Voir les Douze Travaux</button>
+        <ul id="labors-list" style="display: none;">
+            <li>1. Le Lion de Némée</li>
+            <li>2. L'Hydre de Lerne</li>
+            <li>3. La Biche de Cérynie</li>
+            <li>4. Le Sanglier d'Érymanthe</li>
+            <li>5. Les Écuries d'Augias</li>
+            <li>6. Les Oiseaux du lac Stymphale</li>
+            <li>7. Le Taureau de Crète</li>
+            <li>8. Les Juments de Diomède</li>
+            <li>9. La Ceinture d'Hippolyte</li>
+            <li>10. Les Bœufs de Géryon</li>
+            <li>11. Les Pommes d'or du jardin des Hespérides</li>
+            <li>12. Cerbère, le chien des Enfers</li>
+        </ul>
+    </section>
+
+    <section class="interaction">
+        <h2>Testez votre Force avec Héraclès !</h2>
+        <p>Appuyez sur le bouton pour augmenter votre force !</p>
+        <button onclick="increaseStrength()">Augmenter la force 💪</button>
+        <p id="strength-counter">Force : 0</p>
+    </section>
+</main>
+
+<footer>
+    <p><a href="index.html">Retour à la page principale</a></p>
+</footer>
+
+<script>
+    function showLabors() {
+        var laborsList = document.getElementById("labors-list");
+        laborsList.style.display = "block";
+    }
+
+    let strength = 0;
+    function increaseStrength() {
+        strength += 10;
+        document.getElementById("strength-counter").textContent = `Force : ${strength}`;
+    }
+</script>
+
+</body>
+</html>
